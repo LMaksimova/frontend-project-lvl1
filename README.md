@@ -4,4 +4,5 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/LyudmilaMaksimova/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/LyudmilaMaksimova/frontend-project-lvl1/actions)
 
-[![hexlet-check](https://github.com/LyudmilaMaksimova/frontend-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/LyudmilaMaksimova/frontend-project-lvl1/actions/workflows/hexlet-check.yml)
+### GitHub Action
+[![Build Status](https://travis-ci.com/LyudmilaMaksimova/projectname.svg?branch=master)](https://travis-ci.com/LyudmilaMaksimova/projectname)
