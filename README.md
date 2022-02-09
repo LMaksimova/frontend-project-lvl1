@@ -5,5 +5,4 @@
 [![Actions Status](https://github.com/LyudmilaMaksimova/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/LyudmilaMaksimova/frontend-project-lvl1/actions)
 
 ### GitHub Action
-[![Build Status](https://travis-ci.com/LyudmilaMaksimova/projectname.svg?branch=master)](https://travis-ci.com/LyudmilaMaksimova/projectname)
-
+[![Testing_CI](https://github.com/LyudmilaMaksimova/frontend-project-lvl1/actions/workflows/testProgect.yml/badge.svg)](https://github.com/LyudmilaMaksimova/frontend-project-lvl1/actions/workflows/testProgect.yml)
