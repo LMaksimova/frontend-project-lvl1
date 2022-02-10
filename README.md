@@ -5,4 +5,5 @@
 [![Actions Status](https://github.com/LyudmilaMaksimova/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/LyudmilaMaksimova/frontend-project-lvl1/actions)
 
 ### GitHub Action
-![GitHub Action](https://github.com/LyudmilaMaksimova/frontend-project-lvl1/actions/workflows/Node.js/badge.svg)
+[![GitHub Action](https://github.com/LyudmilaMaksimova/frontend-project-lvl1/workflows/Node.js/badge.svg)]
+(https://github.com/LyudmilaMaksimova/frontend-project-lvl1/actions)
