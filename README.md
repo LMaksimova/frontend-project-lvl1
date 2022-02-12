@@ -6,3 +6,6 @@
 
 ### GitHub Action:
 [![GitHub Action](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)](https://github.com/LyudmilaMaksimova/frontend-project-lvl1/actions)
+
+### asciicast:
+[![asciicast](https://asciinema.org/a/WrkHlC45sLQBQCAidaGeFtkaJ.svg)](https://asciinema.org/a/WrkHlC45sLQBQCAidaGeFtkaJ)(https://asciinema.org/a/WrkHlC45sLQBQCAidaGeFtkaJ)
