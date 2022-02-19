@@ -21,9 +21,7 @@ const gcd = () => {
   const num1 = randomNum();
   const num2 = randomNum();
   const randomExpression = `${num1} ${num2}`;
-  console.log(randomExpression);
   const correctAnswer = rightAnswer(num1, num2);
-  console.log(rightAnswer(num1, num2));
     return [randomExpression, String(correctAnswer)];
 }
 
