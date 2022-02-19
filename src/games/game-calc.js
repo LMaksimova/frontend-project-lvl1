@@ -1,12 +1,11 @@
+
 import runGame, * as gamesRules from '../index.js';
 import randomNum from '../randomNum.js';
 
 const gameRules = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 const randomOperator = operators[Math.floor(Math.random() * operators.length)];
-const num1 = randomNum();
-const num2 = randomNum();
-const operator = randomOperator;
+
 
 
 const rightAnswer = (num1, num2, operator) => {

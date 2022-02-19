@@ -9,10 +9,10 @@ const  gameOver = (userAnswer, correctAnswer, userName) => {
     bye = `Let's try again, ${userName}`;
 }
 
-const runGame = (gameRules, calc) => {
+const runGame = (gameRules, game) => {
   console.log(gameRules);
   for (let i = 0; i < roundCount; i += 1) {
-    const [question, correctAnswer] = calc();
+    const [question, correctAnswer] = game();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question(`Your answer: `);
 
@@ -23,6 +23,7 @@ const runGame = (gameRules, calc) => {
         break;
     }
   }
+  console.log(bye);
 };
 
 export default runGame;
