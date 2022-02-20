@@ -1,11 +1,12 @@
 import readlineSync from 'readline-sync';
 import { userName } from './cli.js';
+
 const roundCount = 3;
 let bye = `Congratulations, ${userName}!`;
 
 const  gameOver = (userAnswer, correctAnswer, userName) => {
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-    bye = `Let's try again, ${userName}`;
+    bye = `Let's try again, ${userName}!`;
 }
 
 const runGame = (gameRules, game) => {
