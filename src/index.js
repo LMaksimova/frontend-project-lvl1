@@ -9,6 +9,7 @@ const  gameOver = (userAnswer, correctAnswer, userName) => {
 }
 
 const runGame = (gameRules, game) => {
+  console.log(gameRules);
   for (let i = 0; i < roundCount; i += 1) {
     const [question, correctAnswer] = game();
     console.log(`Question: ${question}`);

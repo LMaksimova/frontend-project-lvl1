@@ -24,6 +24,6 @@ $ brain-calc
 $ brain-gcd
 [![asciicast](https://asciinema.org/a/FAd8olHKPO32QM1JbDFLcW5tN.svg)](https://asciinema.org/a/FAd8olHKPO32QM1JbDFLcW5tN)
 $ brain-progression
-[![asciicast](https://asciinema.org/a/rzOjsfdOadtbmtkZEzCwDX2qI.svg)](https://asciinema.org/a/rzOjsfdOadtbmtkZEzCwDX2qI)
+[![asciicast](https://asciinema.org/a/lg4flZZbJTEXpD2mzj8BTYhoG.svg)](https://asciinema.org/a/lg4flZZbJTEXpD2mzj8BTYhoG)
 $ brain-prime
-[![asciicast](https://asciinema.org/a/Ae7aCJDfFrpP4pGRGVI5WvP83.svg)](https://asciinema.org/a/Ae7aCJDfFrpP4pGRGVI5WvP83)
+[![asciicast](https://asciinema.org/a/6U8WvUyRCUiHjP9hpCPPdfj9K.svg)](https://asciinema.org/a/6U8WvUyRCUiHjP9hpCPPdfj9K)
