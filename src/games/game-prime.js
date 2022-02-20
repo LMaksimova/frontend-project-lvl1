@@ -1,0 +1,27 @@
+import { question } from 'readline-sync';
+import runGame from '../index.js';
+import randomNum from '../randomNum.js';
+
+const gameRules = `Answer "yes" if given number is prime. Otherwise answer "no".`;
+
+const isPrime = (num) => {
+    if ((num === 1) || (num <= 0)) {
+      return false;
+    }
+    for (let divisor = 2; divisor < num; divisor++) {
+      if (num % divisor === 0) {
+        return false;
+      }
+    }
+    return true;
+  };
+
+  const prime = () => {
+    const randomExpression = randomNum();
+    const correctAnswer = (isPrime(randomExpression)) ? 'yes' : 'no';
+    return [randomExpression, String(correctAnswer)];
+  };
+
+export default () => {
+    runGame(gameRules, prime);
+};
