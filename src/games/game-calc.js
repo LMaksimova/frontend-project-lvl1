@@ -4,7 +4,7 @@ import randomNum from '../randomNum.js';
 
 const gameRules = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
-const randomOperator = operators[Math.floor(Math.random() * operators.length)];
+const randomOperator = () => operators[Math.floor(Math.random() * operators.length)];
 
 
 
