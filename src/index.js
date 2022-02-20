@@ -1,4 +1,3 @@
-//import randomNum from '../../src/randomNum.js'; 
 import readlineSync from 'readline-sync';
 import { userName } from './cli.js';
 const roundCount = 3;
