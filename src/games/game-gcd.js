@@ -1,5 +1,5 @@
 import runGame from '../index.js';
-import randomNum from '../randomNum.js';
+import {getRandomIntInclusive} from '../randomNum.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
 const rightAnswer = (num1, num2) => {
@@ -17,8 +17,8 @@ const rightAnswer = (num1, num2) => {
 
 
 const gcd = () => {
-  const num1 = randomNum();
-  const num2 = randomNum();
+  const num1 = getRandomIntInclusive(1, 100);
+  const num2 = getRandomIntInclusive(1, 100);
   const randomExpression = `${num1} ${num2}`;
   const correctAnswer = rightAnswer(num1, num2);
     return [randomExpression, String(correctAnswer)];
