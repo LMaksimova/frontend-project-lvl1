@@ -25,7 +25,7 @@ const question = () => {
       let temp = randomExpression[hide];
       const correctAnswer = temp;
       randomExpression[hide] = '..';
-      return [randomExpression.join(', '), String(correctAnswer)];
+      return [randomExpression.join(' '), String(correctAnswer)];
   };
 
 export default () => {
