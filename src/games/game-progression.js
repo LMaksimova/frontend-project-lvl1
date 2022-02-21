@@ -6,7 +6,7 @@ const gameRules = `What number is missing in the progression?`;
 
 
 const question = () => {
-    const progressionLength = getRandomIntInclusive(8, 10);
+    const progressionLength = getRandomIntInclusive(5, 10);
     const expression = [];
       const start = randomNum();
       const step = getRandomIntInclusive(1, 10);
@@ -25,7 +25,7 @@ const question = () => {
       let temp = randomExpression[hide];
       const correctAnswer = temp;
       randomExpression[hide] = '..';
-      return [randomExpression, String(correctAnswer)];
+      return [randomExpression.join(', '), String(correctAnswer)];
   };
 
 export default () => {
