@@ -1,12 +1,9 @@
-
-import runGame, * as gamesRules from '../index.js';
+import runGame from '../index.js';
 import randomNum from '../randomNum.js';
 
 const gameRules = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 const randomOperator = () => operators[Math.floor(Math.random() * operators.length)];
-
-
 
 const rightAnswer = (num1, num2, operator) => {
     switch (operator) {
