@@ -17,13 +17,13 @@ $ make install
 $ npm link
 
 ```
-$ brain-even
+ $ brain-even
 [![asciicast](https://asciinema.org/a/WrkHlC45sLQBQCAidaGeFtkaJ.svg)](https://asciinema.org/a/WrkHlC45sLQBQCAidaGeFtkaJ)
-$ brain-calc
+ $ brain-calc
 [![asciicast](https://asciinema.org/a/SMK2zpkP0uKJzLrowUhd6nkWd.svg)](https://asciinema.org/a/SMK2zpkP0uKJzLrowUhd6nkWd)
-$ brain-gcd
+ $ brain-gcd
 [![asciicast](https://asciinema.org/a/FAd8olHKPO32QM1JbDFLcW5tN.svg)](https://asciinema.org/a/FAd8olHKPO32QM1JbDFLcW5tN)
-$ brain-progression
+ $ brain-progression
 [![asciicast](https://asciinema.org/a/lg4flZZbJTEXpD2mzj8BTYhoG.svg)](https://asciinema.org/a/lg4flZZbJTEXpD2mzj8BTYhoG)
-$ brain-prime
+ $ brain-prime
 [![asciicast](https://asciinema.org/a/6U8WvUyRCUiHjP9hpCPPdfj9K.svg)](https://asciinema.org/a/6U8WvUyRCUiHjP9hpCPPdfj9K)
