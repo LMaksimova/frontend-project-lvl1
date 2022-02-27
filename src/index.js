@@ -14,7 +14,8 @@ const runGame = (gameRules, generateRound) => {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      return console.log(`Let's try again, ${userName}!`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
     }
   }
   console.log(`Congratulations, ${userName}!`);
