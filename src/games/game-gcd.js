@@ -3,7 +3,7 @@ import randomNum from '../randomNum.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
 
-const rightAnswer = (num1, num2) => {
+const getGcd = (num1, num2) => {
   let result = 0;
   while (num1 !== num2) {
     if (num1 > num2) {
@@ -15,14 +15,14 @@ const rightAnswer = (num1, num2) => {
   return result = num1;
 };
 
-const gcd = () => {
+const generateRound = () => {
   const num1 = randomNum();
   const num2 = randomNum();
-  const randomExpression = `${num1} ${num2}`;
-  const correctAnswer = rightAnswer(num1, num2);
-  return [randomExpression, String(correctAnswer)];
+  const question = `${num1} ${num2}`;
+  const correctAnswer = String(getGcd(num1, num2));
+  return [question, correctAnswer];
 };
 
 export default () => {
-  runGame(gameRules, gcd);
+  runGame(gameRules, generateRound);
 };
