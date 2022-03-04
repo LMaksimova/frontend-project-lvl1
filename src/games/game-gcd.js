@@ -4,7 +4,6 @@ import randomNum from '../randomNum.js';
 const gameRules = 'Find the greatest common divisor of given numbers.';
 
 const getGcd = (num1, num2) => {
-  let result = 0;
   while (num1 !== num2) {
     if (num1 > num2) {
       num1 -= num2;
@@ -12,7 +11,7 @@ const getGcd = (num1, num2) => {
       num2 -= num1;
     }
   }
-  return result = num1;
+  return  num1;
 };
 
 const generateRound = () => {
