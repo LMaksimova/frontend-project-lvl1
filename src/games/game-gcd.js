@@ -1,17 +1,20 @@
+/* eslint-disable no-param-reassign */
 import runGame from '../index.js';
 import randomNum from '../randomNum.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
 
 const getGcd = (num1, num2) => {
-  while (num1 !== num2) {
-    if (num1 > num2) {
-      num1 -= num2;
+  let a = num1;
+  let b = num2;
+  while (a !== b) {
+    if (a > b) {
+      a -= b;
     } else {
-      num2 -= num1;
+      b -= a;
     }
   }
-  return  num1;
+  return a;
 };
 
 const generateRound = () => {
