@@ -3,9 +3,9 @@ import randomNum from '../randomNum.js';
 
 const gameRules = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
-const randomOperator = () => operators[Math.floor(Math.random() * operators.length)];
+const randomOperator = () => operators[randomNum(0, operators.length - 1)];
 
-const rightAnswer = (num1, num2, operator) => {
+const calculate = (num1, num2, operator) => {
   switch (operator) {
     case '+':
       return num1 + num2;
@@ -13,20 +13,19 @@ const rightAnswer = (num1, num2, operator) => {
       return num1 - num2;
     case '*':
       return num1 * num2;
-    default:
-      return null;
+    default: throw new Error('Unsupported operator');
   }
 };
 
-const calc = () => {
+const generateCalcRound = () => {
   const num1 = randomNum();
   const num2 = randomNum();
   const operator = randomOperator();
-  const randomExpression = `${num1} ${operator} ${num2}`;
-  const correctAnswer = rightAnswer(num1, num2, operator);
-  return [randomExpression, String(correctAnswer)];
+  const question = `${num1} ${operator} ${num2}`;
+  const correctAnswer = String(calculate(num1, num2, operator));
+  return [question, correctAnswer];
 };
 
 export default () => {
-  runGame(gameRules, calc);
+  runGame(gameRules, generateCalcRound);
 };

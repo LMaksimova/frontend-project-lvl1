@@ -15,12 +15,12 @@ const isPrime = (num) => {
   return true;
 };
 
-const prime = () => {
+const generatePrimeRound = () => {
   const randomExpression = randomNum();
-  const correctAnswer = (isPrime(randomExpression)) ? 'yes' : 'no';
-  return [randomExpression, String(correctAnswer)];
+  const correctAnswer = String(isPrime(randomExpression) ? 'yes' : 'no');
+  return [randomExpression, correctAnswer];
 };
 
 export default () => {
-  runGame(gameRules, prime);
+  runGame(gameRules, generatePrimeRound);
 };

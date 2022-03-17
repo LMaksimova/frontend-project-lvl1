@@ -17,7 +17,7 @@ const getGcd = (num1, num2) => {
   return a;
 };
 
-const generateRound = () => {
+const generateGcdRound = () => {
   const num1 = randomNum();
   const num2 = randomNum();
   const question = `${num1} ${num2}`;
@@ -26,5 +26,5 @@ const generateRound = () => {
 };
 
 export default () => {
-  runGame(gameRules, generateRound);
+  runGame(gameRules, generateGcdRound);
 };

@@ -4,14 +4,13 @@ import runGame from '../index.js';
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = (num) => num % 2 === 0;
 
-const even = () => {
-  const random = randomNum();
-  const randomExpression = `${random}`;
-  const rightAnswer = isEven(random) ? 'yes' : 'no';
-  const correctAnswer = rightAnswer;
-  return [randomExpression, String(correctAnswer)];
+const generateEvenRound = () => {
+  const randomNumber = randomNum();
+  const answer = isEven(randomNumber) ? 'yes' : 'no';
+  const question = String(randomNumber);
+  return [question, answer];
 };
 
 export default () => {
-  runGame(gameRules, even);
+  runGame(gameRules, generateEvenRound);
 };
