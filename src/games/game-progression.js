@@ -9,7 +9,7 @@ const generateProgression = (lengthOfProgression, startNumber, step) => {
     const value = startNumber + i * step;
     expression.push(value);
   }
-  return `${expression}`;
+  return expression;
 };
 
 const generateProgressionRound = () => {
@@ -17,11 +17,11 @@ const generateProgressionRound = () => {
   const startNumber = randomNum();
   const step = randomNum(1, 10);
   const arrayOfExpression = generateProgression(lengthOfProgression, startNumber, step);
-  const randomExpression = arrayOfExpression.split(',');
-  const hideIndex = randomNum(0, randomExpression.length - 1);
-  const correctAnswer = randomExpression[hideIndex];
-  randomExpression[hideIndex] = '..';
-  return [randomExpression.join(' '), String(correctAnswer)];
+  const hideIndex = randomNum(0, arrayOfExpression.length - 1);
+  const correctAnswer = String(arrayOfExpression[hideIndex]);
+  arrayOfExpression[hideIndex] = '..';
+  const randomExpression = arrayOfExpression.join(' ');
+  return [randomExpression, correctAnswer];
 };
 
 export default () => {
